@@ -1,1 +1,12 @@
+var d document.getElementById("dibujo");
+var lienzo =d.getContext("2d");
 
+function dibujarLinea(color, xi, yi, yf, xf,)
+{
+  lienzo.beginPath();
+  lienzo.strokeStyle = color;
+  lienzo.moveTo(xi, yi,);
+  lienzo.lineTo(xf, yf);
+  lienzo.stroke();
+  lienzo.closePath();
+}
